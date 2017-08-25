@@ -1,0 +1,48 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+	
+	// https://mvnrepository.com/artifact/org.springframework/spring-context
+	compile group: 'org.springframework', name: 'spring-context', version: '4.3.9.RELEASE'
+	
+	// https://mvnrepository.com/artifact/org.springframework/spring-web
+	compile group: 'org.springframework', name: 'spring-web', version: '4.3.9.RELEASE'
+	
+	// https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxrs
+	compile group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxrs', version: '3.1.9'
+	
+	// https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-rs-service-description
+	compile group: 'org.apache.cxf', name: 'cxf-rt-rs-service-description', version: '3.1.9'
+	
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.4.7.RELEASE'
+
+	// https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
+	compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.5.15'
+	
+	// https://mvnrepository.com/artifact/com.google.protobuf/protobuf-gradle-plugin
+	compile group: 'com.google.protobuf', name: 'protobuf-gradle-plugin', version: '0.8.3'
+	
+	// https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java
+	compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.3.1'
+	
+	// https://mvnrepository.com/artifact/com.googlecode.protobuf-java-format/protobuf-java-format
+	compile group: 'com.googlecode.protobuf-java-format', name: 'protobuf-java-format', version: '1.4'
+	
+	// https://mvnrepository.com/artifact/org.springframework/spring-test
+	testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.9.RELEASE'
+	
+	// https://mvnrepository.com/artifact/org.springframework.integration/spring-integration-test
+	testCompile group: 'org.springframework.integration', name: 'spring-integration-test', version: '4.3.9.RELEASE'
+	
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+	testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.4.7.RELEASE'
+	
+    testCompile 'junit:junit:4.12'
+}
