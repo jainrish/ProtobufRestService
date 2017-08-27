@@ -3,10 +3,14 @@ package etc;
 option java_package = "com.protobuf.generated";
 option java_outer_classname = "LibraryProtos";
 
+message Libraries {
+	
+	repeated Library library = 1;
+
+}
 message Library {
 	int32 libraryID = 1;
-	int32 booksCount = 2;
-	string organization = 3;
+	string organization = 2;
 	
 	enum OrganizationType {
 		ACADEMIC = 0;
@@ -14,8 +18,8 @@ message Library {
 		OTHER = 2;
 	}
 	
-	OrganizationType organizationType = 4;
-	repeated Book books = 5;
+	OrganizationType organizationType = 3;
+	repeated Book books = 4;
 	
 }
 

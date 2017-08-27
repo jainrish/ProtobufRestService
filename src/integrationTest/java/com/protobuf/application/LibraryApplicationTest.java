@@ -26,10 +26,10 @@ public class LibraryApplicationTest {
 	@Test
     public void contextLoaded() {
 
-        ResponseEntity<LibraryProtos.Library> library = restTemplate.getForEntity(
-                "http://localhost:8080/library/1", LibraryProtos.Library.class);
+        ResponseEntity<LibraryProtos.Libraries> libraries = restTemplate.getForEntity(
+                "http://localhost:8080/library/1", LibraryProtos.Libraries.class);
 
-        Assert.assertEquals(1, library.getBody().getBooks5List().size());
+        Assert.assertEquals(1, libraries.getBody().getLibrary(0).getBooksCount());
     }
 
 }

@@ -35,6 +35,9 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.googlecode.protobuf-java-format/protobuf-java-format
 	compile group: 'com.googlecode.protobuf-java-format', name: 'protobuf-java-format', version: '1.4'
 	
+	// https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
+	compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
+		
 	// https://mvnrepository.com/artifact/org.springframework/spring-test
 	testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.9.RELEASE'
 	
