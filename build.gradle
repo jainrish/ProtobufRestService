@@ -6,16 +6,12 @@ repositories {
 }
 
 dependencies {
-    compile 'org.slf4j:slf4j-api:1.7.21'
 	
 	// https://mvnrepository.com/artifact/org.springframework/spring-context
 	compile group: 'org.springframework', name: 'spring-context', version: '4.3.9.RELEASE'
 	
 	// https://mvnrepository.com/artifact/org.springframework/spring-web
 	compile group: 'org.springframework', name: 'spring-web', version: '4.3.9.RELEASE'
-	
-	// https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxrs
-	compile group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxrs', version: '3.1.9'
 	
 	// https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-rs-service-description
 	compile group: 'org.apache.cxf', name: 'cxf-rt-rs-service-description', version: '3.1.9'
